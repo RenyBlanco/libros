@@ -5,6 +5,7 @@ import LoadingScreen from '../components/LoadingScreen';
 import { waitFor } from '../utils/utils';
 import TableContainer from './TableContainer';
 import { Link } from 'react-router-dom';
+import styles from './libros.module.css'
 
 interface Cabeza {
     isbn: String;
@@ -101,7 +102,7 @@ const Libros = () => {
     }
     return (
         
-        <main>
+        <main className={styles.tabla}>
             <TableContainer>
                 <table {...getTableProps()}>
                     <thead>
